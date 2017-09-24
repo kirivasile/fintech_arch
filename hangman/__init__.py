@@ -1,5 +1,6 @@
 """ Implementation of game Hangman """
 
+
 class Hangman(object):
     """ Class of game itself"""
 
@@ -19,7 +20,8 @@ class Hangman(object):
             letter : incoming letter
         """
         if letter in self._tokens:
-            indices = [i for i in xrange(len(self._tokens)) if self._tokens[i] == letter]
+            num = len(self._tokens)
+            indices = [i for i in xrange(num) if self._tokens[i] == letter]
             for idx in indices:
                 self._current_word[idx] = self._tokens[idx]
             return True
