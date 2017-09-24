@@ -17,8 +17,17 @@ setup(
     install_requires=[
     ],
     setup_requires=[
+        "pytest-runner",
+        "pytest-pylint",
+        "pytest-pycodestyle",
+        "pytest-pep257",
+        "pytest-cov",
     ],
     tests_require=[
+        "pytest",
+        "pylint",
+        "pycodestyle",
+        "pep257",
     ],
     classifiers=[
         "Development Status :: 1 - Planning",
