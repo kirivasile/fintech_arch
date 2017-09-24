@@ -25,9 +25,8 @@ class Hangman(object):
             for idx in indices:
                 self._current_word[idx] = self._tokens[idx]
             return True
-        else:
-            self._num_mistakes += 1
-            return False
+        self._num_mistakes += 1
+        return False
 
     def get_num_mistakes(self):
         """

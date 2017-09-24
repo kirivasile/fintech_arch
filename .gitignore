@@ -20,3 +20,6 @@ wheels/
 # Unit test / coverage reports
 .coverage
 .cache
+.coverage.*
+coverage.xml
+.coveragerc
